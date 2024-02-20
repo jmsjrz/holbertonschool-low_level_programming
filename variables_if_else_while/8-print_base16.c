@@ -9,16 +9,16 @@
  */
 int main(void)
 {
-int nombre;
-int lettre;
+int numbers;
+int letters;
 
-for (nombre = 0; nombre < 10; nombre++)
+for (numbers = 0; numbers < 10; numbers++)
 {
-putchar('0' + nombre);
+putchar('0' + numbers);
 }
-for (lettre = 'a'; lettre < 'f'; lettre++)
+for (letters = 'a'; letters <= 'f'; letters++)
 {
-putchar('lettre');
+putchar(letters);
 }
 putchar('\n');
 return (0);
