@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main -  prints the alphabet in lowercase then uppercase using putchar function
+ * main -  prints the alphabet in lowercase then uppercase using putchar
  *
  * Return: always 0
  */
