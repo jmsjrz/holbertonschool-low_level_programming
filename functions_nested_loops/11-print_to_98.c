@@ -7,17 +7,21 @@
  */
 void print_to_98(int n)
 {
-	int number;
+while (n < 98)
+{
+print_number(n);
+_putchar(',');
+_putchar(' ');
+n++;
+}
 
-	for (number = 'n'; number <= 98; number++)
-	{
-	_putchar('0' + number);
-	if (number < 98)
-	{
-	_putchar(',');
-	_putchar(' ');
-	}
-	}
-	_putchar('\n');
-	return (0);
+while (n > 98)
+{
+print_number(n);
+_putchar(',');
+_putchar(' ');
+n--;
+}
+print_number(98);
+_putchar('\n');
 }
