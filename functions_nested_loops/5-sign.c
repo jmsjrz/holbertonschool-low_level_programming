@@ -1,20 +1,28 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_sign - checks for alphabetic character
- * 
- * Return: 0 if alphabetic character, else 1
+ * print_sign - prints the sign of the number
+ * @n: the number to check
+ *
+ * Return: 0 if the number is zero 
+ * 1 if the number is greater than zero,
+ * -1 if the number is less than zero.
  */
 int print_sign(int n)
 {
-	if (n == 0)
-		return (0);
-		printf(0);
-	else if (n < 0)
-		return ('-1');
-		printf('-');
-	else 
+	if (n > 0)
+	{
+		printf("+");
 		return (1);
-		printf('+');
+	}
+	else if (n == 0)
+	{
+		printf("0");
+		return (0);
+	}
+	else
+	{
+		printf("-");
+		return (-1);
+	}
 }
-
