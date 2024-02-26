@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_numbers - Prints all the alphabet 10 times
+ *print_numbers - Prints all the numbers
  *Return: Always 0
 */
 void print_numbers(void)
