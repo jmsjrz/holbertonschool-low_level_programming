@@ -2,13 +2,14 @@
 
 /**
 * print_line - prints a line in the terminal
-* @n: parameter
+* @n: The number of times the character '_' should be printed
 * Return: nothing
 */
 void print_line(int n)
 {
-	for (int number = 0; number < n; number++)
+	int number;
 
+	for (number = 0; number < n; number++)
 	{
 		_putchar('_');
 	}
