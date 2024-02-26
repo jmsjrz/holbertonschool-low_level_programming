@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-*print_numbers - Prints all the numbers except few
+*print_most_numbers - Prints all the numbers except few
 *Return: Always 0
 */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int number;
 
