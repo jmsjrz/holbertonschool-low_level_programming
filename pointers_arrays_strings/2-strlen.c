@@ -1,17 +1,15 @@
 #include "main.h"
 
 /**
-* _puts - print a string
-* @str: pointer to the string
+* _strlen - return the length of a string
+* @s: pointer to char
 * Return: 0
 */
-void _puts(char *str)
+int _strlen(char *s)
 {
-	for (int i = 0; str[i] != '\0'; i++)
+	int count = 0;
 
-	{
-		putchar(str[i]);
-	}
-
-	putchar('\n');
+	for (count = 0; s[count] != '\0'; count++)
+	{}
+	return (count);
 }
