@@ -9,6 +9,8 @@
 
 int _atoi(char *s)
 {
-	printf("Hello World");
+
+	puts(s);
 	return (0);
+
 }
