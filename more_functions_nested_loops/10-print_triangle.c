@@ -11,7 +11,7 @@
 void print_triangle(int size)
 {
 
-	puts(s);
+	puts("nothing");
 	return (0);
 
 }
