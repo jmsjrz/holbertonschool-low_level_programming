@@ -2,30 +2,39 @@
 #include <stdio.h>
 
 /**
-* _atoi - converts a string to an integer.
-* @s: string to convert.
-* Return: The converted integer, or 0 if no valid digits found
+* _atoi - entry point
+* @s: caracter to convert
+* Return: numerical value of the string
 */
+
 int _atoi(char *s)
 {
-	int num = 0;
+	int result = 0;
 
-	int sign = 1;
+	int sign = 1; /* signe du nombre */
 
-	while (*s == ' ' || *s == '\t' || *s == '\n')
-		s++;
+	int i = 0;
 
-	if (*s == '-')
+	while (s[i] != '\0')
 	{
-		sign = -1;
-		s++;
+		if (s[i] == ' ' || s[i] == '+')
+		{
+			i++;
+		}
+		else if (s[i] == '-')
+		{
+			sign = -1;
+			i++;
+		}
+		else if (s[i] >= '0' && s[i] <= '9')
+		{
+			result = result 10 + (s[i] - '0');
+			i++;
+		}
+		else
+		{
+			break;
+		}
 	}
-
-	while (*s >= '0' && *s <= '9')
-	{
-		num = num * 10 + (*s - '0');
-		s++;
-	}
-
-	return (num * sign);
+	return ((result * sign));
 }
