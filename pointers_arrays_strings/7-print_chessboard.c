@@ -10,8 +10,8 @@
  */
 void print_chessboard(char (*a)[8])
 {
-	int x; /* index parcourant les lignes */
-	int y; /* index parcourant les elements de chaques lignes */
+	int x;
+	int y;
 
 	for (x = 0; x < 8; x++)
 	{
