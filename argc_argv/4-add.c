@@ -17,7 +17,7 @@
 */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i, j, sum = 0;
 
 	if (argc == 1)
 	{
@@ -29,8 +29,8 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		/* Loop through the arguments */
-		for (int j = 0; argv[i][j] != '\0'; j++)
-
+		j = 0; /* Declaration moved outside the for-loop */
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			/* Loop through each character of an argument */
 			if (!isdigit(argv[i][j]))
