@@ -4,17 +4,20 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/*
- * struct dog - structure defining informations for dogs
+/**
+ * struct dog - structure defining information for dogs
  * @name: name of the dog
  * @age: age of the dog
  * @owner: owner of the dog
+ *
+ * Description: A struct to store the basic information about a dog, including
+ * its name, age, and the name of its owner.
  */
 struct dog
 {
-    char *name;
-    float age;
-    char *owner;
+	char *name;
+	float age;
+	char *owner;
 };
 
 typedef struct dog dog_t;
