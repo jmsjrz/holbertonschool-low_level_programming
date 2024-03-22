@@ -54,3 +54,4 @@ void print_all(const char * const format, ...)
 	printf("\n"); /* After all arguments have been printed, print a newline */
 	va_end(args); /* Clean up the argument list */
 }
+
