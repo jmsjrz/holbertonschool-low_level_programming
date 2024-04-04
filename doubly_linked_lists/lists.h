@@ -2,8 +2,12 @@
 #define _LISTS_H_
 
 #include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
+#include <string.h>
+#include <stdarg.h>
+#include <unistd.h>
+#include <limits.h>
+#include <stddef.h>
 
 int _putchar(char);
 size_t print_dlistint(const dlistint_t *h);
