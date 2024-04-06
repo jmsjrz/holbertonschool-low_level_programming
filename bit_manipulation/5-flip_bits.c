@@ -1,25 +1,24 @@
 #include "main.h"
 
 /**
- * count_flip_bits - Counts the number of bits to flip to convert num1 to num2.
- * @num1: First number.
- * @num2: Second number.
- *
- * Description: Performs an XOR between num1 and num2, then counts the set bits
- * in the result.
- *
- * Return: Number of bits to flip.
- */
-unsigned int count_flip_bits(unsigned long int num1, unsigned long int num2)
+* flip_bits - Counts the number of bits to flip to get from one num to another.
+* @n: The first number.
+* @m: The second number.
+*
+* Return: The number of bits that must be flipped to convert n to m.
+*/
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int xor_result = num1 ^ num2;
+	unsigned long int xor = n ^ m; /* XOR to find differing bits */
 
-	unsigned int flip_count = 0;
+	unsigned int count = 0;
 
-	while (xor_result > 0)
+	/* Count the set bits in xor (differing bits) */
+	while (xor)
 	{
-		flip_count += xor_result & 1;
-		xor_result >>= 1;
+		count += xor & 1;
+		xor >>= 1;
 	}
-	return (flip_count);
+
+	return (count);
 }
